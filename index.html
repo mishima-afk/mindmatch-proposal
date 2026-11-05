@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>MIND MATCH 取材のご依頼｜GOAT</title>
+<meta name="description" content="Z世代の学生が社長に取材し、その想いを若い世代へ届けるインタビューメディア MIND MATCH の取材企画書です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Anton&family=Yomogi&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#E3234C;
+  --red-dark:#B8143A;
+  --ink:#141416;
+  --ink-2:#3B3B40;
+  --mute:#6B6A6F;
+  --paper:#FFFFFF;
+  --paper-2:#F5F3EF;
+  --line:#141416;
+  --orange:#EE7623;
+  --yellow:#FFC41A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:"Zen Kaku Gothic New",system-ui,sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden;font-feature-settings:"palt"}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1180px,100% - 40px);margin:0 auto}
+.en{font-family:"Anton",Impact,sans-serif;letter-spacing:.02em;font-weight:400}
+.hand{font-family:"Yomogi",cursive}
+.label{font-family:"Anton",Impact,sans-serif;letter-spacing:.18em;font-size:14px;color:var(--mute)}
+.label b{color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;letter-spacing:.02em;font-weight:900;font-size:17px;margin-left:10px}
+.red{color:var(--red)}
+.mark{background:linear-gradient(transparent 62%, rgba(227,35,76,.28) 62%);padding:0 .08em}
+
+/* progress + header */
+.progress{position:fixed;left:0;top:0;height:4px;width:0;background:var(--red);z-index:60}
+header.top{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(255,255,255,.94);border-bottom:2px solid var(--ink);transform:translateY(-100%);transition:transform .35s ease}
+header.top.show{transform:none}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+header.top .brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:15px;text-decoration:none}
+header.top .brand img{height:30px;width:auto}
+.pill{display:inline-flex;align-items:center;gap:14px;background:var(--ink);color:#fff;text-decoration:none;font-weight:900;border-radius:999px;padding:14px 26px;font-size:16px;line-height:1.2;border:2px solid var(--ink);transition:transform .15s ease, background .15s ease}
+.pill:hover{transform:translateY(-2px)}
+.pill .arr{font-family:"Anton",sans-serif;font-size:18px}
+.pill.red{background:var(--red);border-color:var(--red);color:#fff}
+.pill.ghost{background:#fff;color:var(--ink)}
+.pill.sm{padding:9px 18px;font-size:14px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+
+/* HERO */
+.hero{position:relative;padding:44px 0 40px;overflow:hidden;border-bottom:2px solid var(--ink)}
+.hero-top{display:flex;justify-content:space-between;align-items:center}
+.hero-top img{height:44px;width:auto}
+.hero-top .label{font-size:13px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;margin-top:48px}
+.sticker{display:inline-block;background:var(--yellow);color:var(--ink);font-weight:900;font-size:15px;padding:8px 16px;transform:rotate(-3deg);box-shadow:4px 4px 0 var(--ink);border:2px solid var(--ink)}
+.nw{white-space:nowrap}
+.hero h1{font-weight:900;font-size:clamp(30px,5vw,64px);line-height:1.22;letter-spacing:-.01em;margin:26px 0 26px}
+.hero h1 .z{color:var(--red);position:relative;white-space:nowrap}
+.hero h1 .z svg{position:absolute;left:-6%;bottom:-.12em;width:112%;height:.42em;overflow:visible}
+.hero h1 .z svg path{stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.1s .7s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero .lead{font-size:18px;color:var(--ink-2);max-width:520px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.collage{position:relative;height:560px}
+.polaroid{position:absolute;background:#fff;padding:10px 10px 38px;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);width:210px}
+.polaroid img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.polaroid span{position:absolute;left:12px;right:12px;bottom:8px;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.polaroid::before{content:"";position:absolute;top:-12px;left:50%;width:74px;height:22px;margin-left:-37px;background:rgba(255,196,26,.85);transform:rotate(-4deg)}
+.p1{left:0;top:40px;transform:rotate(-6deg)}
+.p2{left:34%;top:0;transform:rotate(3deg);z-index:2}
+.p3{right:0;top:70px;transform:rotate(7deg)}
+.p4{left:12%;top:300px;transform:rotate(4deg);z-index:3}
+.p5{right:8%;top:320px;transform:rotate(-5deg);z-index:2}
+.scribble{position:absolute;right:-6px;bottom:-4px;font-size:22px;color:var(--red);transform:rotate(-6deg);z-index:4}
+.scroll-cue{display:flex;align-items:center;gap:10px;margin-top:34px;font-size:13px;color:var(--mute)}
+.scroll-cue i{display:block;width:2px;height:34px;background:var(--ink);animation:cue 1.6s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ticker */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;border-bottom:2px solid var(--ink)}
+.ticker .row{display:flex;width:max-content;animation:tick 48s linear infinite}
+.ticker span{font-weight:900;font-size:17px;padding:16px 0;white-space:nowrap}
+.ticker span::after{content:"／";color:var(--red);margin:0 22px}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:120px 0;position:relative}
+.sec-head{margin-bottom:56px}
+.sec-head h2{font-weight:900;font-size:clamp(30px,4.4vw,56px);line-height:1.32;margin-top:18px;letter-spacing:-.01em}
+.sec-head p{margin-top:20px;color:var(--ink-2);max-width:720px;font-size:18px}
+.bg2{background:var(--paper-2)}
+.dark{background:var(--ink);color:#fff}
+.dark .label{color:#A9A7A2}.dark .label b{color:#fff}
+.dark .sec-head p{color:#CFCCC6}
+
+/* big number box (screenshot style) */
+.numbox>*{min-width:0}
+.numbox{border:3px solid var(--ink);border-radius:22px;padding:40px 48px;display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center;background:#fff}
+.numbox .big{font-weight:900;font-size:clamp(56px,8.4vw,112px);line-height:1;white-space:nowrap;letter-spacing:-.03em}
+.numbox .big em{font-style:normal;color:var(--red)}
+.numbox p{font-size:18px;color:var(--ink-2)}
+.numbox p b{color:var(--ink)}
+
+/* origin */
+.origin-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.story p{margin-bottom:22px;color:var(--ink-2);font-size:18px}
+.story p.strong{color:var(--ink);font-weight:900;font-size:22px;line-height:1.6}
+.timeline{border-left:3px solid var(--ink);padding-left:34px;display:grid;gap:34px}
+.timeline li{list-style:none;position:relative}
+.timeline li::before{content:"";position:absolute;left:-44px;top:8px;width:17px;height:17px;border-radius:50%;background:#fff;border:3px solid var(--ink)}
+.timeline li.hot::before{background:var(--red);border-color:var(--red)}
+.timeline .y{font-family:"Anton",sans-serif;font-size:15px;letter-spacing:.12em;color:var(--red)}
+.timeline h3{font-weight:900;font-size:21px;line-height:1.5;margin:4px 0 6px}
+.timeline p{color:var(--ink-2);font-size:16px}
+.quote{margin-top:44px;border:3px solid var(--ink);border-radius:20px;padding:30px 34px;position:relative;background:#fff}
+.quote p{font-weight:900;font-size:22px;line-height:1.7}
+.quote small{display:block;margin-top:10px;color:var(--mute);font-size:13px}
+.quote::after{content:"";position:absolute;left:44px;bottom:-16px;width:26px;height:26px;background:#fff;border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(45deg)}
+.pasiri{margin-top:64px;background:var(--red);color:#fff;border-radius:22px;padding:44px 48px;display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+.pasiri .big{font-weight:900;font-size:clamp(26px,3.4vw,42px);line-height:1.35}
+.pasiri p{font-size:17px;color:#FFEFF2}
+
+/* job ad mock */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:stretch}
+.card{border:3px solid var(--ink);border-radius:20px;padding:34px;background:#fff}
+.card h3{font-weight:900;font-size:20px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.card .tag{font-size:12px;font-weight:900;background:var(--ink);color:#fff;border-radius:999px;padding:4px 12px}
+.card .tag.r{background:var(--red)}
+.jobrow{display:flex;justify-content:space-between;border-bottom:2px dashed #CFCCC6;padding:12px 0;font-size:16px}
+.jobrow b{font-weight:900}
+.jobrow.empty{color:#B4B1AB}
+.jobrow.empty b{color:#B4B1AB}
+.card.story-card{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card.story-card li{list-style:none;padding:12px 0;border-bottom:2px dashed #3E3E44;font-size:16px;color:#E9E7E2}
+.card.story-card li b{color:#fff;font-weight:900;margin-right:8px}
+.compare .note{grid-column:1/-1;font-size:18px;color:var(--ink-2)}
+
+/* manifesto */
+.manifesto{background:var(--red);color:#fff;padding:150px 0;overflow:hidden}
+.manifesto .bgword{position:absolute;inset:auto 0 -40px 0;font-family:"Anton",sans-serif;font-size:clamp(120px,22vw,320px);line-height:.9;color:rgba(255,255,255,.08);white-space:nowrap;pointer-events:none}
+.manifesto h2{font-weight:900;font-size:clamp(32px,5.4vw,72px);line-height:1.4;position:relative}
+.manifesto h2 .line{display:block}
+.manifesto p{margin-top:40px;font-size:19px;max-width:760px;color:#FFEFF2;position:relative;font-weight:500}
+
+/* three */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.three .card{display:flex;flex-direction:column;gap:12px}
+.three .n{font-family:"Anton",sans-serif;font-size:54px;line-height:1;color:var(--red)}
+.three h3{font-weight:900;font-size:28px;margin:0}
+.three p{color:var(--ink-2);font-size:16px}
+
+/* media */
+.media-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.media{border:3px solid var(--ink);border-radius:22px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.media .hd{padding:30px 32px 0}
+.media .hd .label{font-size:13px}
+.media .hd h3{font-weight:900;font-size:26px;line-height:1.45;margin-top:10px}
+.media .vis{margin:22px 32px 0;border-radius:14px;overflow:hidden;border:2px solid var(--ink)}
+.mm-vis{background:var(--ink);display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px}
+.mm-vis img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.mm-vis .logo{grid-column:1/-1;padding:18px 18px 12px;display:flex;align-items:center;justify-content:space-between;color:#fff;font-size:13px;font-weight:700}
+.mm-vis .logo img{aspect-ratio:auto;height:34px;width:auto}
+.media .bd{padding:24px 32px 32px;display:flex;flex-direction:column;gap:14px;flex:1}
+.media .bd p{color:var(--ink-2);font-size:16px}
+.hl{border-left:5px solid var(--red);padding:2px 0 2px 16px}
+.hl b{display:block;color:var(--red);font-size:14px;font-weight:900}
+.hl span{display:block;font-size:15px;font-weight:700;line-height:1.6}
+.media .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:10px}
+.flh-vis img{width:100%;aspect-ratio:1200/630;object-fit:cover}
+.flh-sub{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 32px 0}
+.flh-sub div{border:2px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--orange);color:#fff;display:flex;flex-direction:column;justify-content:center}
+.flh-sub img{width:100%;aspect-ratio:400/150;object-fit:cover}
+.flh-sub .radio{padding:14px 16px;font-weight:900;font-size:15px;line-height:1.5;color:var(--ink);background:var(--yellow)}
+.flh-sub .radio small{display:block;font-weight:700;font-size:12px}
+.chain{margin-top:36px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:14px}
+.chain div{border:2px solid var(--ink);border-radius:999px;padding:14px 18px;text-align:center;font-weight:900;font-size:15px;background:#fff;line-height:1.4}
+.chain div.r{background:var(--red);border-color:var(--red);color:#fff}
+.chain i{font-style:normal;font-family:"Anton",sans-serif;font-size:22px}
+
+/* articles */
+.arts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.art{display:flex;flex-direction:column;text-decoration:none;border:3px solid var(--ink);border-radius:18px;overflow:hidden;background:#fff;transition:transform .2s ease, box-shadow .2s ease}
+.art:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--ink)}
+.art .ph{position:relative;aspect-ratio:4/3;overflow:hidden;background:#EEE}
+.art .ph img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .6s ease}
+.art:hover .ph img{transform:scale(1.05)}
+.art .ind{position:absolute;left:12px;top:12px;background:#fff;border:2px solid var(--ink);border-radius:999px;font-size:12px;font-weight:900;padding:3px 10px}
+.art .tx{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px}
+.art .co{color:var(--red);font-weight:900;font-size:14px}
+.art .q{font-weight:900;font-size:19px;line-height:1.55}
+.art .more{font-size:13px;color:var(--mute);font-weight:700;margin-top:4px}
+
+/* reach */
+.reach{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.reach .card{background:transparent;border-color:#45454B}
+.reach .card h3{font-size:24px}
+.reach .card p{color:#CFCCC6;font-size:16px}
+.reach .card .ic{width:54px;height:54px;border-radius:50%;border:2px solid var(--red);display:grid;place-items:center;margin-bottom:18px;color:var(--red);font-family:"Anton",sans-serif;font-size:22px}
+.reach .card.hot{background:var(--red);border-color:var(--red)}
+.reach .card.hot p{color:#FFEFF2}
+.reach .card.hot .ic{border-color:#fff;color:#fff}
+.reach-note{margin-top:34px;font-size:18px;color:#CFCCC6}
+
+/* inside */
+.inside-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.rows{border-top:3px solid var(--ink)}
+.rows .r{display:grid;grid-template-columns:76px 1fr;gap:20px;padding:28px 0;border-bottom:3px solid var(--ink)}
+.rows .r .n{font-family:"Anton",sans-serif;font-size:44px;line-height:1;color:var(--red)}
+.rows .r h3{font-weight:900;font-size:22px;margin-bottom:6px}
+.rows .r p{color:var(--ink-2);font-size:16px}
+.memo{margin-top:30px;display:inline-block;background:#fff;border:2px solid var(--ink);padding:18px 22px;transform:rotate(-1.5deg);box-shadow:5px 5px 0 var(--ink);font-size:16px}
+.memo .hand{color:var(--red);font-size:20px;display:block;margin-bottom:4px}
+
+/* case */
+.case-nums{display:grid;grid-template-columns:1fr auto 1fr;gap:40px;align-items:center;margin-top:10px}
+.case-nums .k{font-size:15px;color:#CFCCC6;font-weight:700}
+.case-nums .v{font-weight:900;font-size:clamp(84px,14vw,190px);line-height:1;letter-spacing:-.04em}
+.case-nums .v small{font-size:.4em;margin-left:.06em;letter-spacing:0}
+.case-nums .before .v{color:#6F6E73}
+.case-nums .after .v{color:var(--red)}
+.case-nums .arrow{font-family:"Anton",sans-serif;font-size:72px;color:var(--red)}
+.case-quote{margin-top:56px;border-left:6px solid var(--red);padding:6px 0 6px 28px;font-weight:900;font-size:clamp(20px,2.6vw,30px);line-height:1.6}
+.case-foot{margin-top:28px;font-size:14px;color:#A9A7A2}
+
+/* questions */
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.qs .card .ch{font-family:"Anton",sans-serif;letter-spacing:.14em;color:var(--red);font-size:14px}
+.qs .card h3{font-size:22px;margin:8px 0 14px}
+.qs ul{list-style:none}
+.qs li{padding:9px 0 9px 22px;border-top:2px dashed #DCD9D3;position:relative;font-size:16px}
+.qs li::before{content:"";position:absolute;left:2px;top:20px;width:9px;height:9px;background:var(--red);border-radius:50%}
+
+/* flow */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:s}
+.flow .st{border:3px solid var(--ink);border-radius:18px;padding:24px 20px;background:#fff;position:relative}
+.flow .st .n{font-family:"Anton",sans-serif;font-size:36px;color:var(--red);line-height:1}
+.flow .st h3{font-weight:900;font-size:18px;margin:12px 0 6px}
+.flow .st p{font-size:14px;color:var(--ink-2);line-height:1.7}
+.flow .st.hot{background:var(--ink);color:#fff}
+.flow .st.hot p{color:#CFCCC6}
+.flow-note{margin-top:28px;font-size:16px;color:var(--ink-2)}
+
+/* closing */
+.closing{background:var(--ink);color:#fff;padding:150px 0 120px;overflow:hidden}
+.closing h2{font-weight:900;font-size:clamp(36px,6.4vw,88px);line-height:1.28}
+.closing p.sub{margin-top:26px;font-size:19px;color:#CFCCC6}
+.closing .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:44px}
+.closing .pill.ghost{background:transparent;color:#fff;border-color:#fff}
+.contact{margin-top:64px;padding-top:30px;border-top:2px solid #3E3E44;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center}
+.contact img{height:44px;width:auto}
+.contact p{font-size:15px;color:#CFCCC6}
+.contact p b{color:#fff;font-size:17px}
+footer{background:var(--ink);color:#8C8A85;font-size:12px;padding:24px 0 40px;text-align:center;border-top:1px solid #2A2A2E}
+
+/* responsive */
+@media (max-width:1100px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(30px,8.4vw,64px)}
+  .collage{height:470px;max-width:520px;margin:0 auto;width:100%}
+}
+@media (max-width:960px){
+  section{padding:88px 0}
+  .hero-grid,.origin-grid,.inside-grid,.compare,.media-grid{grid-template-columns:1fr}
+  .collage{height:470px;max-width:520px;margin:0 auto;width:100%}
+  .polaroid{width:170px}
+  .p4{top:250px}.p5{top:270px}
+  .three,.arts,.reach,.qs{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .numbox,.pasiri{grid-template-columns:1fr;gap:18px;padding:32px 28px}
+  .chain{grid-template-columns:1fr;justify-items:stretch}
+  .chain i{transform:rotate(90deg);text-align:center}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 32px)}
+  .hero{padding-top:28px}
+  .hero-top img{height:34px}
+  .hero-grid{margin-top:30px;gap:20px}
+  .collage{height:400px}
+  .polaroid{width:138px;padding:7px 7px 30px}
+  .polaroid span{font-size:11px;bottom:6px}
+  .p2{left:30%}.p4{left:4%;top:215px}.p5{right:2%;top:230px}
+  .three,.arts,.reach,.qs,.flow{grid-template-columns:1fr}
+  .sec-head{margin-bottom:38px}
+  .card{padding:26px 22px}
+  .media .hd,.media .bd{padding-left:22px;padding-right:22px}
+  .media .vis,.flh-sub{margin-left:22px;margin-right:22px}
+  .case-nums{grid-template-columns:1fr;gap:10px}
+  .case-nums .arrow{transform:rotate(90deg);width:max-content}
+  .rows .r{grid-template-columns:54px 1fr}
+  .rows .r .n{font-size:34px}
+  .pill{padding:13px 20px;font-size:15px}
+  .sec-head h2{font-size:clamp(24px,7vw,34px)}
+  .numbox .big{font-size:clamp(34px,10.5vw,56px)}
+  .pasiri .big{font-size:24px}
+  header.top .pill.sm{padding:8px 14px;font-size:13px}
+  header.top .brand span{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .ticker .row,.scroll-cue i{animation:none}
+  .hero h1 .z svg path{animation:none;stroke-dashoffset:0}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="top" id="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/goat-logo-black.svg" alt="GOAT"><span>MIND MATCH 取材のご依頼</span></a>
+    <a class="pill red sm" href="#contact">取材を受けてみる <span class="arr">→</span></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-top">
+      <img src="img/goat-logo-black.svg" alt="GOAT">
+      <p class="label">MIND MATCH <b>取材のご依頼</b></p>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <span class="sticker">世界一パシられる学生団体、GOATです。</span>
+        <h1><span class="nw">社長、その想いを</span><br><span class="z">Z世代<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 18 C 70 6, 150 26, 296 10" fill="none" stroke="#E3234C" stroke-width="7" stroke-linecap="round"/></svg></span>に<br><span class="nw">届けさせてください。</span></h1>
+        <p class="lead">学生が聞き手になって、社長にじっくり取材します。創業のきっかけ、逆境、譲れないこと。求人票には載らないその話を、若い世代に届く記事にします。</p>
+        <div class="cta">
+          <a class="pill red" href="#contact">取材を受けてみる <span class="arr">→</span></a>
+          <a class="pill ghost" href="#articles">掲載記事を見る <span class="arr">↓</span></a>
+        </div>
+        <div class="scroll-cue"><i></i>スクロールして読む</div>
+      </div>
+      <div class="collage" aria-label="MIND MATCHに掲載された社長の写真">
+        <figure class="polaroid p1"><img src="img/shirahato.jpg" alt="株式会社白鳩 津田武社長"><span>株式会社白鳩</span></figure>
+        <figure class="polaroid p2"><img src="img/kariyushi.jpg" alt="株式会社かりゆしの社長"><span>株式会社かりゆし</span></figure>
+        <figure class="polaroid p3"><img src="img/minamitaxi.jpg" alt="南タクシー株式会社 大岡社長"><span>南タクシー株式会社</span></figure>
+        <figure class="polaroid p4"><img src="img/tamtam.jpg" alt="株式会社タム・タム 安藤社長"><span>株式会社タム・タム</span></figure>
+        <figure class="polaroid p5"><img src="img/appleivy.jpg" alt="株式会社あっぷるアイビー 丸田社長"><span>株式会社あっぷるアイビー</span></figure>
+        <span class="scribble hand">次は御社の番です！</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker" aria-label="MIND MATCHに掲載された会社の一部">
+  <div class="row" id="tickerRow">
+    <span>井桁堂株式会社</span><span>日東醸造株式会社</span><span>株式会社ふみこ農園</span><span>株式会社タム・タム</span><span>株式会社かりゆし</span><span>株式会社和泉屋旅館</span><span>株式会社対泉閣</span><span>南タクシー株式会社</span><span>株式会社尾瀬岩鞍リゾート</span><span>今治プラザホテル株式会社</span><span>有限会社丹泉ホテル</span><span>株式会社ACG</span><span>株式会社ひまわり</span><span>株式会社アルト</span><span>株式会社チャップ</span><span>株式会社シーナ</span><span>株式会社あっぷるアイビー</span><span>株式会社サルーン</span><span>株式会社白鳩</span><span>アコ・ブランズ・ジャパン株式会社</span><span>株式会社ファルコン</span>
+  </div>
+</div>
+
+<!-- NUMBER -->
+<section>
+  <div class="wrap">
+    <div class="numbox rv">
+      <div class="big">5年間で<em><span class="count" data-to="4000">4,000</span>社</em></div>
+      <p><b>経営者の本音を、直接聞いてきました。</b>取材は売り込みの場ではありません。だから、給与や条件だけでは見えない創業の経緯や逆境、未来への想いと一緒に、いま本当に困っていることが集まります。これがGOATの信頼の源です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ORIGIN -->
+<section class="bg2" id="origin">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">01 <b>はじまり</b></p>
+      <h2>僕らは、ひとつの取材に<br>救われた学生でした。</h2>
+    </div>
+    <div class="origin-grid">
+      <div class="story rv">
+        <p>大学に入ってすぐ、コロナが来ました。キャンパスに通えないのに、学費は払う。アルバイトのシフトは減り、やがてクビに。やっと手にした第一志望の内定も、取り消しになりました。</p>
+        <p>自分には運がなかった。同じ境遇の友人と、毎日集まっては腐っていました。</p>
+        <p>そんなとき、テレビ番組の制作会社の方から「取材をやってみないか」と声をかけてもらいました。経験はゼロ。それでもその場で頭を下げて、すぐに友人へ電話しました。</p>
+        <p class="strong">どうせなら、自分たちにしかできない取材をしよう。</p>
+        <div class="quote">
+          <p>はじめて取材した企業がテレビで流れたとき、涙が出ました。</p>
+          <small>GOAT 創業ストーリーより</small>
+        </div>
+      </div>
+      <ol class="timeline rv d2">
+        <li><p class="y">2021</p><h3>コロナ禍、学生生活が止まる</h3><p>授業もアルバイトも内定も、手の中から消えていった。</p></li>
+        <li><p class="y">TURNING POINT</p><h3>テレビ番組の取材を手伝う</h3><p>取材先を徹底的に調べ、学生ならではの視点で台本をつくった。</p></li>
+        <li class="hot"><p class="y">DISCOVERY</p><h3>社長の数だけ、想いと悩みがあった</h3><p>話を聞くほど、それを届ける場所が足りないと知った。</p></li>
+        <li><p class="y">GOAT</p><h3>仲間と学生団体GOATを結成</h3><p>自分たちの力で発信し、人の役に立ちたい。それが今も変わらない原点です。</p></li>
+      </ol>
+    </div>
+    <div class="pasiri rv">
+      <p class="big">だから僕らは、<br>世界一パシられる団体でいたい。</p>
+      <p>社長に頼まれたら、まず走る。調べて、会いに行って、話を聞いて、書く。社長の想いを届けるためなら、学生の時間も足も、全部使ってください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">02 <b>私たちが見てきたこと</b></p>
+      <h2>求人票には、<br><span class="nw"><span class="mark">社長の想い</span>が載っていない。</span></h2>
+      <p>若者が会社を選ぶとき、目に入るのは条件です。どれも大切。でも条件だけで選んだ会社は、もっと良い条件が出てくれば簡単に離れてしまいます。</p>
+    </div>
+    <div class="compare">
+      <div class="card rv">
+        <h3><span class="tag">いつもの求人票</span>見えるもの</h3>
+        <div class="jobrow"><span>給与</span><b>月給 ○○万円〜</b></div>
+        <div class="jobrow"><span>休日</span><b>年間休日 ○○日</b></div>
+        <div class="jobrow"><span>勤務地</span><b>○○県○○市</b></div>
+        <div class="jobrow empty"><span>社長がこの会社をつくった理由</span><b>記載なし</b></div>
+        <div class="jobrow empty"><span>いちばん苦しかったとき</span><b>記載なし</b></div>
+        <div class="jobrow empty"><span>若い人に託したい未来</span><b>記載なし</b></div>
+      </div>
+      <div class="card story-card rv d2">
+        <h3><span class="tag r">MIND MATCHの記事</span>伝わるもの</h3>
+        <ul>
+          <li><b>原点</b>なぜ、この会社が生まれたのか</li>
+          <li><b>逆境</b>何を乗り越えて、今があるのか</li>
+          <li><b>哲学</b>どんな判断を、大切にしてきたのか</li>
+          <li><b>未来</b>どこへ向かい、誰と行きたいのか</li>
+          <li><b>言葉</b>社長の口から出た、そのままの一言</li>
+        </ul>
+      </div>
+      <p class="note rv">人が本当に心を動かされるのは、右側の話です。けれどその物語は、社長の胸の中にしかありません。</p>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto">
+  <div class="bgword" aria-hidden="true">MIND MATCH</div>
+  <div class="wrap">
+    <p class="label rv" style="color:#FFD6DE">03 <b style="color:#fff">GOATが届けたいもの</b></p>
+    <h2 style="margin-top:24px">
+      <span class="line rv">会社は、人の想いでできている。</span>
+      <span class="line rv d1">その想いが伝われば、</span>
+      <span class="line rv d2">人は集まり、残り、誇りを持つ。</span>
+    </h2>
+    <p class="rv d3">私たちが届けたいのは、会社の条件ではなく、社長の想いです。その想いを、次の世代の言葉に翻訳して届けること。それがMIND MATCHです。</p>
+  </div>
+</section>
+
+<!-- THREE -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">04 <b>取材で届けるもの</b></p>
+      <h2>聞き手が学生だから、<br>届けられるものがあります。</h2>
+    </div>
+    <div class="three">
+      <div class="card rv"><p class="n">01</p><h3>想い</h3><p>創業のきっかけ、逆境、譲れないこと。社長にしか語れない物語を、時間をかけて聞き出します。</p></div>
+      <div class="card rv d1"><p class="n">02</p><h3>言葉</h3><p>社長の言葉を、そのままの温度で受け取ります。そして同世代に届く言葉へ翻訳します。</p></div>
+      <div class="card rv d2"><p class="n">03</p><h3>共感</h3><p>条件がいい会社の手前にある「この社長の話をもっと聞きたい」。その気持ちが、出会いの入口になります。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section class="bg2" id="media">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">05 <b>2つの経営者メディア</b></p>
+      <h2>記事は、2つのメディアから<br>Z世代へ届きます。</h2>
+      <p>GOATが運営するMIND MATCHと、扶桑社・アナログPR・GOATでつくる経済メディア Future Leaders Hub。MIND MATCHの記事は、Future Leaders Hubの「MIND MATCH」枠でも発信しています。</p>
+    </div>
+    <div class="media-grid">
+      <article class="media rv">
+        <div class="hd">
+          <p class="label">MIND MATCH</p>
+          <h3>Z世代 × 経営者<br>インタビューメディア</h3>
+        </div>
+        <div class="vis mm-vis">
+          <div class="logo"><img src="img/mm-logo-white.png" alt="MIND MATCH"><span>失敗も、挑戦も、成功も、全部リアル。</span></div>
+          <img src="img/igetado.jpg" alt="井桁堂株式会社の社長" loading="lazy">
+          <img src="img/shirahato.jpg" alt="株式会社白鳩 津田武社長" loading="lazy">
+          <img src="img/acg.jpg" alt="株式会社ACGの社長" loading="lazy">
+        </div>
+        <div class="bd">
+          <p>学生自身がインタビュアーになり、企業のトップに直接取材。観光、医療・福祉、食品、製造、飲食など9つの業界の社長の言葉を、若者が共感できるストーリーにして発信しています。</p>
+          <div class="hl"><b>井桁堂株式会社（食品・飲料）</b><span>「時代の変化に対応し続ける」問屋からメーカーへ</span></div>
+          <div class="hl"><b>南タクシー株式会社（運送）</b><span>「人が来ない」を覆す。熱量300%で業界を変える</span></div>
+          <div class="links"><a class="pill sm" href="https://mindmatch.goat-groups.com/" target="_blank" rel="noopener">mindmatch.goat-groups.com <span class="arr">→</span></a></div>
+        </div>
+      </article>
+      <article class="media rv d2">
+        <div class="hd">
+          <p class="label">FUTURE LEADERS HUB</p>
+          <h3>扶桑社 × GOAT<br>Z世代の未来をつくる経済メディア</h3>
+        </div>
+        <div class="vis flh-vis"><img src="img/flh-ogp.png" alt="Future Leaders Hub 2025年10月31日創刊 扶桑社・アナログPR・GOAT" loading="lazy"></div>
+        <div class="flh-sub">
+          <div><img src="img/flh-youtube.png" alt="YouTube FLH tv" loading="lazy"></div>
+          <div class="radio">ラジオ番組も放送中<small>WEB・YouTube・ラジオで発信</small></div>
+        </div>
+        <div class="bd">
+          <p>2025年10月31日創刊。ビジネスに関心のある学生や、就職活動に意欲的な学生に向けたWEBメディアです。トップランナーや経営者の言葉を、20代前半と学生に届けています。</p>
+          <a class="hl" href="https://flh.jp/mind-match-powered-by-goat/312/" target="_blank" rel="noopener" style="text-decoration:none"><b>FLH「MIND MATCH」枠の掲載記事 →</b><span>「ごまで世界平和」を掲げる京都企業の挑戦</span></a>
+          <a class="hl" href="https://flh.jp/mind-match-powered-by-goat/520/" target="_blank" rel="noopener" style="text-decoration:none"><b>FLH「MIND MATCH」枠の掲載記事 →</b><span>造船会社トップが明かす、リーマン・ショック後の再建と新たな挑戦</span></a>
+          <div class="links">
+            <a class="pill sm" href="https://flh.jp/mind-match-powered-by-goat/" target="_blank" rel="noopener">flh.jp（MIND MATCH枠） <span class="arr">→</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="chain rv">
+      <div>社長に取材</div><i>→</i>
+      <div>MIND MATCHに掲載</div><i>→</i>
+      <div class="r">Future Leaders Hubでも発信</div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="articles">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">06 <b>掲載記事より</b></p>
+      <h2>社長の言葉が、<br>そのまま見出しになる。</h2>
+      <p>どれもMIND MATCHで公開中の記事です。タップすると記事が開きます。</p>
+    </div>
+    <div class="arts">
+      <a class="art rv" href="https://mindmatch.goat-groups.com/4658" target="_blank" rel="noopener"><div class="ph"><img src="img/shirahato.jpg" alt="株式会社白鳩 津田武社長" loading="lazy"><span class="ind">製造</span></div><div class="tx"><p class="co">株式会社白鳩</p><p class="q">「歯車になるのが嫌だった」約200名の仲間と挑む製造業の革新</p><p class="more">記事を読む →</p></div></a>
+      <a class="art rv d1" href="https://mindmatch.goat-groups.com/4222" target="_blank" rel="noopener"><div class="ph"><img src="img/minamitaxi.jpg" alt="南タクシー株式会社 大岡社長" loading="lazy"><span class="ind">運送</span></div><div class="tx"><p class="co">南タクシー株式会社</p><p class="q">「人が来ない」を覆す。熱量300%で業界を変える大岡社長の挑戦</p><p class="more">記事を読む →</p></div></a>
+      <a class="art rv d2" href="https://mindmatch.goat-groups.com/5302" target="_blank" rel="noopener"><div class="ph"><img src="img/tamtam.jpg" alt="株式会社タム・タム 安藤社長" loading="lazy"><span class="ind">アパレル・雑貨</span></div><div class="tx"><p class="co">株式会社タム・タム</p><p class="q">「根拠のない自信だけがあった」倒産危機を乗り越えた2代目社長の挑戦</p><p class="more">記事を読む →</p></div></a>
+      <a class="art rv" href="https://mindmatch.goat-groups.com/5219" target="_blank" rel="noopener"><div class="ph"><img src="img/appleivy.jpg" alt="株式会社あっぷるアイビー 丸田社長" loading="lazy"><span class="ind">飲食</span></div><div class="tx"><p class="co">株式会社あっぷるアイビー</p><p class="q">「自分の家族に食べさせられるか」が全ての基準。</p><p class="more">記事を読む →</p></div></a>
+      <a class="art rv d1" href="https://mindmatch.goat-groups.com/5392" target="_blank" rel="noopener"><div class="ph"><img src="img/igetado.jpg" alt="井桁堂株式会社の社長" loading="lazy"><span class="ind">食品・飲料</span></div><div class="tx"><p class="co">井桁堂株式会社</p><p class="q">「時代の変化に対応し続ける」問屋からメーカーへ、アーモンドで街づくりを描く</p><p class="more">記事を読む →</p></div></a>
+      <a class="art rv d2" href="https://mindmatch.goat-groups.com/4214" target="_blank" rel="noopener"><div class="ph"><img src="img/acg.jpg" alt="株式会社ACGの社長" loading="lazy"><span class="ind">医療・福祉</span></div><div class="tx"><p class="co">株式会社ACG</p><p class="q">「課題に夢中のまま死にたい」介護業界20年の経営者が語る生き方の本質</p><p class="more">記事を読む →</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- REACH -->
+<section class="dark" id="reach">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">07 <b>記事が届く先</b></p>
+      <h2>全国の若者が、<br>社長と会社を知る。</h2>
+    </div>
+    <div class="reach">
+      <div class="card rv"><div class="ic">01</div><h3>全国の大学生</h3><p>就職先を探しはじめる前の段階で、会社と社長の名前を覚えてもらえます。</p></div>
+      <div class="card rv d1"><div class="ic">02</div><h3>Z世代の若手社会人</h3><p>次のキャリアを考える世代に、条件ではなく生き方で選ばれる会社として映ります。</p></div>
+      <div class="card hot rv d2"><div class="ic">03</div><h3>地元の若者</h3><p>同じ地域、身近な会社の話だからこそ、共感はそのまま愛着に変わります。</p></div>
+    </div>
+    <p class="reach-note rv">採用のためだけではありません。会社の想い、気持ち、言葉が乗った記事だから、読んだ人の中に共感が残ります。</p>
+  </div>
+</section>
+
+<!-- INSIDE -->
+<section id="inside">
+  <div class="wrap inside-grid">
+    <div class="rv">
+      <p class="label">08 <b>記事のその先</b></p>
+      <h2 style="font-weight:900;font-size:clamp(28px,3.6vw,48px);line-height:1.36;margin-top:18px"><span class="nw">いちばん深く読むのは、</span><br><span class="nw">社員の皆さんです。</span></h2>
+      <p style="margin-top:22px;color:var(--ink-2);font-size:18px">取材記事は、しっかり執筆して納品します。社内報として回覧してくださった会社から、うれしい声をたくさんいただいています。</p>
+      <div class="memo"><span class="hand">学生メモ</span>「社員が社長の想いを知るきっかけになった」。回覧してくださった会社から、そんな声をよくいただきます。</div>
+    </div>
+    <div class="rows rv d2">
+      <div class="r"><p class="n">01</p><div><h3>社内報として回覧</h3><p>ふだんは聞けない社長の原点を、全員が同じ文章で知る。それがチームの共通言語になります。</p></div></div>
+      <div class="r"><p class="n">02</p><div><h3>会社と社長への愛着</h3><p>「うちの社長は、こんな想いで会社をやっていたのか」。その発見が、働く誇りにつながります。</p></div></div>
+      <div class="r"><p class="n">03</p><div><h3>内定者・新入社員へ</h3><p>入社前の不安を、「この人と働きたい」という気持ちに変えるきっかけになります。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE -->
+<section class="dark" id="case">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">09 <b>ある取材先1社で起きたこと</b></p>
+      <h2>内定者に、<br>社長の記事を読んでもらった。</h2>
+    </div>
+    <div class="case-nums rv">
+      <div class="before"><p class="k">新卒の内定辞退率（8割を超える業界）</p><p class="v">8<small>割超</small></p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="after"><p class="k">この会社で、記事を読んでもらった後</p><p class="v"><span class="count" data-to="3">3</span><small>割</small></p></div>
+    </div>
+    <p class="case-quote rv">条件で決めた内定は、もっと良い条件に負ける。<br>想いに共感して決めた内定は、残る。</p>
+    <p class="case-foot rv">※ 1社の事例です。結果は会社や状況によって異なります。</p>
+  </div>
+</section>
+
+<!-- QUESTIONS -->
+<section class="bg2" id="questions">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">10 <b>取材でお聞きすること</b></p>
+      <h2>聞くのは、売上より<br>「なぜ」です。</h2>
+    </div>
+    <div class="qs">
+      <div class="card rv"><p class="ch">CHAPTER 1</p><h3>社長ご自身のこと</h3><ul><li>事業を始めた、継いだきっかけ</li><li>いちばん苦労したこと</li><li>経営者として大切にしていること</li><li>学生のうちにやっておくべきこと</li></ul></div>
+      <div class="card rv d1"><p class="ch">CHAPTER 2</p><h3>事業と、その強み</h3><ul><li>どんなお客様に何を届けているか</li><li>長く愛されている理由</li><li>他社にはない強み</li><li>これから描く未来</li></ul></div>
+      <div class="card rv d2"><p class="ch">CHAPTER 3</p><h3>人と、仲間のこと</h3><ul><li>どんな人と働きたいか</li><li>社員に伝えたいこと</li><li>採用への想いと目標</li><li>若い世代へのメッセージ</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="flow">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="label">11 <b>進め方</b></p>
+      <h2>社長のお手間は、<br>ほぼ取材の時間だけです。</h2>
+    </div>
+    <div class="flow">
+      <div class="st rv"><p class="n">01</p><h3>ご依頼・日程</h3><p>ご都合のよい日時を伺います。</p></div>
+      <div class="st rv d1"><p class="n">02</p><h3>事前リサーチ</h3><p>学生チームが御社を調べ、問いを準備します。</p></div>
+      <div class="st hot rv d2"><p class="n">03</p><h3>取材</h3><p>対面でもオンラインでも。社長のお話を伺います。</p></div>
+      <div class="st rv d3"><p class="n">04</p><h3>執筆・ご確認</h3><p>掲載前に原稿をご確認いただきます。</p></div>
+      <div class="st rv d4"><p class="n">05</p><h3>掲載・納品</h3><p>記事を掲載し、納品します。社内報にもお使いいただけます。</p></div>
+    </div>
+    <p class="flow-note rv">費用や日程の目安は、担当からご案内します。</p>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing" id="contact">
+  <div class="wrap">
+    <p class="label rv">12 <b>お願い</b></p>
+    <h2 class="rv" style="margin-top:22px">社長の想いを、<br>聞かせてください。</h2>
+    <p class="sub rv">その言葉を、次の世代へ届けるのが僕らの仕事です。</p>
+    <div class="cta rv">
+      <a class="pill red" href="mailto:mishima@goat-groups.com?subject=MIND%20MATCH%20%E5%8F%96%E6%9D%90%E3%81%AE%E4%BB%B6">メールで返信する <span class="arr">→</span></a>
+      <a class="pill ghost" href="https://mindmatch.goat-groups.com/" target="_blank" rel="noopener">MIND MATCHを見る <span class="arr">→</span></a>
+      <a class="pill ghost" href="https://flh.jp/" target="_blank" rel="noopener">Future Leaders Hubを見る <span class="arr">→</span></a>
+    </div>
+    <div class="contact rv">
+      <img src="img/goat-logo-white.svg" alt="GOAT">
+      <p><b>GOAT株式会社 ｜ 担当 三島</b><br>mishima@goat-groups.com</p>
+    </div>
+  </div>
+</section>
+<footer>Copyright © 2026 GOAT Limited. All Rights Reserved.</footer>
+
+<script>
+(function(){
+  var row=document.getElementById('tickerRow');
+  if(row){row.innerHTML+=row.innerHTML;}
+  var bar=document.getElementById('progress'),top=document.getElementById('topbar');
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+    top.classList.toggle('show',h.scrollTop>window.innerHeight*0.7);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function countUp(el){
+    var to=+el.dataset.to,dur=1200,t0=null;
+    function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(to*e).toLocaleString('ja-JP');if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);
+  }
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)||reduce){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){
+      if(en.isIntersecting){
+        en.target.classList.add('in');
+        en.target.querySelectorAll('.count').forEach(countUp);
+        io.unobserve(en.target);
+      }
+    });
+  },{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
